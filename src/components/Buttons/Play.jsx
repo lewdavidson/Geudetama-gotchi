@@ -1,9 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function Play() {
+export default function Play(props) {
   return(
     <div>
-      <button>Play</button>
+      <button onClick={props.onHandlePlay}>Play</button>
     </div>
   );
 }
+
+Play.propTypes = {
+  onHandlePlay: PropTypes.func
+};

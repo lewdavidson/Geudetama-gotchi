@@ -1,9 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function Sleep() {
+export default function Sleep(props) {
   return(
     <div>
-      <button>Sleep</button>
+      <button onClick={props.onHandleSleep}>Sleep</button>
     </div>
   );
 }
+
+Sleep.propTypes = {
+  onHandleSleep: PropTypes.func
+};

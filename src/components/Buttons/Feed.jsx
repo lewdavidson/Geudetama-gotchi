@@ -3,13 +3,10 @@ import PropTypes from 'prop-types';
 
 export default function Feed (props) {
 
-  function handleFeed() {
-    props.onHandleFeed();
-  }
 
   return(
     <div>
-      <button onClick={handleFeed}>Feed</button>
+      <button onClick={props.onHandleFeed}>Feed</button>
     </div>
   );
 }

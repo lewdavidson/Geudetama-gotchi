@@ -7,7 +7,7 @@ export default function Display(props) {
   return (
     <div>
       <Status geudeInfo={props.guedeInfo}/>
-      <CharacterDisplay />
+      <CharacterDisplay guedeInfo={props.guedeInfo}/>
     </div>
   );
 }

@@ -6,14 +6,25 @@ import PropTypes from 'prop-types';
 
 export default function Buttons(props) {
   return (
-    <div>
+    <div className='container'>
       <Feed onHandleFeed={props.onHandleFeed}/>
-      <Play />
-      <Sleep />
+      <Sleep onHandleSleep={props.onHandleSleep}/>
+      <Play onHandlePlay={props.onHandlePlay}/>
+      <style jsx>{ `
+        .container {
+          margin-top: 50px;
+        }
+        .button {
+          height: 30px;
+          width: 300px;
+        }
+          `}</style>
     </div>
   );
 }
 
 Buttons.propTypes = {
-  onHandleFeed: PropTypes.func
+  onHandleFeed: PropTypes.func,
+  onHandlePlay: PropTypes.func,
+  onHandleSleep: PropTypes.func
 };
