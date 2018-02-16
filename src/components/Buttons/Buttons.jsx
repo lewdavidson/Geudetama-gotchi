@@ -14,10 +14,6 @@ export default function Buttons(props) {
         .container {
           margin-top: 50px;
         }
-        .button {
-          height: 30px;
-          width: 300px;
-        }
           `}</style>
     </div>
   );

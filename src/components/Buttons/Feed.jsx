@@ -6,7 +6,7 @@ export default function Feed (props) {
 
   return(
     <div>
-      <button onClick={props.onHandleFeed}>Feed</button>
+      <button className='button' onClick={props.onHandleFeed}>Feed</button>
     </div>
   );
 }

@@ -55,19 +55,19 @@ export default class Character extends React.Component {
     this.setState({masterGeudeInfo: newMasterGeudeStats});
   }
   updateGuedePicture() {
-    if (this.state.masterGeudeInfo.hungerLevel <= 50) {
+    if (this.state.masterGeudeInfo.hungerLevel <= 60) {
       const newPic = fork;
       const newMasterGeudePic = Object.assign({}, this.state.masterGeudeInfo, {currentImage: newPic});
       this.setState({masterGeudeInfo: newMasterGeudePic});
-    } else if (this.state.masterGeudeInfo.hungerLevel <= 20) {
+    } else if (this.state.masterGeudeInfo.hungerLevel <= 40) {
       const newPic = bento;
       const newMasterGeudePic = Object.assign({}, this.state.masterGeudeInfo, {currentImage: newPic});
       this.setState({masterGeudeInfo: newMasterGeudePic});
-    } else if (this.state.masterGeudeInfo.sleepLevel <= 50) {
+    } else if (this.state.masterGeudeInfo.sleepLevel <= 70) {
       const newPic = baby;
       const newMasterGeudePic = Object.assign({}, this.state.masterGeudeInfo, {currentImage: newPic});
       this.setState({masterGeudeInfo: newMasterGeudePic});
-    } else if (this.state.masterGeudeInfo.sleepLevel <= 20) {
+    } else if (this.state.masterGeudeInfo.sleepLevel <= 40) {
       const newPic = zzz;
       const newMasterGeudePic = Object.assign({}, this.state.masterGeudeInfo, {currentImage: newPic});
       this.setState({masterGeudeInfo: newMasterGeudePic});
