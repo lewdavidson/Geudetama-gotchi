@@ -5,6 +5,7 @@
 #### Description:
 A simple web app made using React that allows you to "feed", 'rest', or 'play with' an little egg creature whose levels go down incrementally every 5 seconds.
 
+![picture](Geude.png)
 
 ### Installation instructions:
 
