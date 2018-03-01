@@ -7,7 +7,6 @@ import chopsticks from '../assets/chopsticks.png';
 import cracked from '../assets/cracked.jpg';
 import fork from '../assets/fork.png';
 import missU from '../assets/missu.png';
-import plate from '../assets/plate.png';
 import zzz from '../assets/zzz.png';
 import standard from '../assets/standard.png';
 
